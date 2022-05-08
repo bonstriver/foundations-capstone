@@ -1,4 +1,0 @@
-Notes for next steps:
-
-
-fix + button on created team card.
