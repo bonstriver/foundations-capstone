@@ -1,0 +1,294 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Bebas Neue;
+}
+#wrapper {
+  min-height:100%;
+  position:relative;
+  height: 100%;
+}
+body{
+    background-color: snow;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+/* Header */
+header{
+    background-color: #CE1141;
+    color: black;
+    text-align: center;
+    font-size: 43px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+/* Create Team Form */
+#addTeamP{
+  font-size: 28px;
+    position: relative;
+    display: flex;
+    margin: 20px;
+}
+
+form{
+    width: 350px;
+  height: 350px;
+  background-color: #CE1141;
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly; 
+  align-items: center;
+  margin: 30px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+/* -------------------------------------- */
+
+/* NBA Logo */
+#JCM{
+    float: left;
+    padding: 1%;
+    height: 162px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* GitHub Logo */
+#gitHub{
+  width: 4.5%;
+  float: right;
+}
+/* Navigation Buttons (Only make own team) */
+#navBtns{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+    text-decoration: underline;
+    font-weight: 750;
+    padding: 16px;
+    
+}
+/* Random team button */
+#button{
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 28px;
+  padding: 16px;
+  font-size: 28px;
+  font-weight: 750;
+}
+/* Team Card CSS ----------------- */
+
+
+#randomTeamCard{
+  width: 700px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 800;
+  margin: 2.5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 5%;
+  float: right;
+}
+
+.frontPageParagraph{
+  padding: 5%;
+  font-size: 18px;
+  margin: 5%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 25%;
+  float: left;
+  right: 15px;
+  font-weight: 500;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.team-cover-image {
+  width: 300px; 
+  height: 300px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.team-card {
+  background-color: #2F1847;
+  width: 300px;
+  margin: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* -------------------------------- */
+
+/* EASTERN DROPDOWN */
+/* Dropdown Button */
+.easternDropbtn {
+  background-color: #CE1141;
+  color: white;
+  padding: 16px;
+  font-size: 28px;
+  border: none;
+  text-decoration: underline;
+  font-weight: 750;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .easternDropbtn {box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;}
+
+/* -------------------------------------------------------------------- */
+/*WESTERN DROPDOWN*/
+.westernDropbtn {
+  background-color: #CE1141;
+  color: white;
+  padding: 16px;
+  font-size: 28px;
+  border: none;
+  text-decoration: underline;
+  font-weight: 750;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  position: relative;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2:hover .westernDropbtn {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+/* ---------------------------------------------------------------------------- */
+.flexing{
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  float: left;
+}
+
+
+#team-container {
+  position: relative;
+  display: flex;
+  float: right;
+  flex-wrap: wrap;
+}
+
+.team-cover {
+  width: 200px; 
+  height: 300px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.team-card {
+  background-color: blanchedalmond;
+  width: 200px;
+  margin: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.team-name {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.team-rating {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.btns-container {
+  width: 100%; 
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+.btns-container > button {
+  width: 20px;
+}
+
+/* ---------------------------------------------------------------------------- */
+footer {
+  position:absolute;
+bottom:0;
+width:100%;
+height:60px; /* Height of the footer */
+background: black;
+}

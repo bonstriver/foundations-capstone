@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Mayer | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+</head>
+<body>
+  <wrapper>
+    <header>
+        <h1>
+            Jericho Jack Jelly Attack
+            <a href="https://www.nba.com" target="_blank">
+                <img id="JCM" src="https://pluspng.com/img-png/nba-logo-vector-png-nba-logo-png-2400.png">
+            </a>
+            <nav class="navBar">
+                <div>
+                    <ul class="dropdown">
+                        <button onclick="dropDwnBtn()" class="easternDropbtn">Eastern Teams</button>
+                        <li id="myDropdown1" class="dropdown-content">
+                          <a href="https://www.nba.com/hawks/" target="_blank" style="background-color: #E03A3E; color: white;">Atlanta Hawks</a>
+                          <a href="https://www.nba.com/celtics/" target="_blank" style="background-color: #007A33; color: white;">Boston Celtics</a>
+                          <a href="https://www.nba.com/nets/" target="_blank" style="background-color: #000000; color: white;">Brooklyn Nets</a>
+                          <a href="https://www.nba.com/hornets/" target="_blank" style="background-color: #00788C; color: white;">Charlotte Hornets</a>
+                          <a href="https://www.nba.com/bulls/" target="_blank" style="background-color: #CE1141; color: white;">Chicago Bulls</a>
+                          <a href="https://www.nba.com/cavaliers/" target="_blank" style="background-color: #860038; color: white;">Cleveland Cavaliers</a>
+                          <a href="https://www.nba.com/pistons/" target="_blank" style="background-color: #1D42BA; color: white;">Detroit Pistons</a>
+                          <a href="https://www.nba.com/pacers/" target="_blank" style="background-color: #002D62; color: white;">Indiana Pacers</a>
+                          <a href="https://www.nba.com/heat/" target="_blank" style="background-color: #98002E; color: white;">Miami Heat</a>
+                          <a href="https://www.nba.com/bucks/" target="_blank" style="background-color: #00471B; color: white;">Milwaukee Bucks</a>
+                          <a href="https://www.nba.com/knicks/" target="_blank" style="background-color: #F58426; color: white;">New York Knicks</a>
+                          <a href="https://www.nba.com/magic/" target="_blank" style="background-color: #0077C0; color: white;">Orlando Magic</a>
+                          <a href="https://www.nba.com/sixers/" target="_blank" style="background-color: #006BB6; color: white;">Philadelphia 76ers</a>
+                          <a href="https://www.nba.com/raptors/" target="_blank" style="background-color: #CE1141; color: white;">Toronto Raptors</a>
+                          <a href="https://www.nba.com/wizards/" target="_blank" style="background-color: #002B5C; color: white;">Washington Wizards</a>
+                        </li>
+                    </ul>
+                      <ul class="dropdown2">
+                        <button onclick="dropDwnBtn()" class="westernDropbtn">Western Teams</button>
+                        <li id="myDropDown2" class="dropdown-content2">
+                          <a href="https://www.mavs.com/mavericks" target="_blank" style="background-color: #00538C; color: white;">Dallas Mavericks</a>
+                          <a href="https://www.nba.com/nuggets/" target="_blank" style="background-color: #0E2240; color: white;">Denver Nuggets</a>
+                          <a href="https://www.nba.com/warriors/" target="_blank" style="background-color: #1D428A; color: white;">Golden State Warriors</a>
+                          <a href="https://www.nba.com/rockets/" target="_blank" style="background-color: #CE1141; color: white;">Houston Rockets</a>
+                          <a href="https://www.nba.com/clippers/" target="_blank" style="background-color: #C8102E; color: white;">Los Angeles Clippers</a>
+                          <a href="https://www.nba.com/lakers/" target="_blank" style="background-color: #FDB927; color: white;">Los Angeles Lakers</a>
+                          <a href="https://www.nba.com/grizzlies/" target="_blank" style="background-color: #5D76A9; color: white;">Memphis Grizzlies</a>
+                          <a href="https://www.nba.com/timberwolves/" target="_blank" style="background-color: #0C2340; color: white;">Minnesota Timberwolves</a>
+                          <a href="https://www.nba.com/pelicans/" target="_blank" style="background-color: #0C2340; color: white;">New Orleans Pelicans</a>
+                          <a href="https://www.nba.com/thunder/" target="_blank" style="background-color: #007AC1; color: white;">Oklahoma City Thunder</a>
+                          <a href="https://www.nba.com/suns/" target="_blank" style="background-color: #E56020; color: white;">Phoenix Suns</a>
+                          <a href="https://www.nba.com/blazers/" target="_blank" style="background-color: #E03A3E; color: white;">Portland Trail Blazers</a>
+                          <a href="https://www.nba.com/kings/" target="_blank" style="background-color: #5A2D81; color: white;">Sacramento Kings</a>
+                          <a href="https://www.nba.com/spurs/" target="_blank" style="background-color: #C4CED4; color: white;">San Antonio Spurs</a>
+                          <a href="https://www.nba.com/jazz/" target="_blank" style="background-color: #002B5C; color: white;">Utah Jazz</a>
+                        </li>
+                      </ul>
+                    <a class="navBar" id="navBtns" href="/public/teamMaker.html">Make Your Own Team</a>
+                </div>
+              
+            <a href="https://www.github.com" target="_blank">
+              <img id="gitHub" src="https://www.shareicon.net/data/128x128/2017/06/22/887590_logo_512x512.png"/>
+            </a>
+          </nav>
+        </h1>
+    </header>
+    <main class="frontPageParagraph">
+      <p>
+        Welcome to my NBA team generator page! The different things you can do are head to the make your own team page to do just that! You can tell where your team is from, what the name of your team is as well as even add a logo! If you're uncreative like myself, you can have the system generate a random NBA team that you can bandwagon! Lastly, you can take you're new team and hover over the Eastern or Western tabs to visit the website of the team you just got assigned or click on the logo of your new team and piss all your friends off with the copious amount of random knowledge that you learned! Click the NBA logo to get an overview of the whole league!
+      </p>
+    </main>
+    <main>
+    <ul id="randomTeamCard" class="">
+      <button id="button">Click here to get a random team!</button>
+    </ul>
+    
+    <script>
+      document.getElementById("button").onclick = function () {
+        axios.get("http://localhost:5151/api/teams").then(function(response) {
+            const data = response.data;
+            document.getElementById("randomTeamCard").innerHTML = [data].map(function(team) {
+                return `The team you should bandwagon is:<br>the ${data.name}!<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"/></a>`;
+              })
+              .join("");
+          }).catch(function (err) {
+            document.getElementById("randomTeamCard").innerHTML =
+              '<li class="text-danger">' + err.message + "</li>";
+          });
+      };
+    </script>
+    </main>
+    <footer>
+      <div id="footer1"></div>
+    </footer>
+  </wrapper>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/server/index.js"></script>
+</body>
+</html>
