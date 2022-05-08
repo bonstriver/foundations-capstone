@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Team Generator | Team Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+</head>
+<body>
+    <wrapper id="wrapper">
+    <header>
+        <h1>
+            Personal Favorite Performances
+            <a href="https://www.nba.com" target="_blank">
+                <img id="JCM" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFRYZGBgYGRkcHBgaGhkaHRwaGhgaGRgaGhkcIS4lHh4rIRwYJjgnKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHzQhJCc0NDQ0NDQ0NDQ0NjQxNDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALkBEQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcCAQj/xABFEAACAQIEAwUFBQUGAwkAAAABAgADEQQSITEFBkEiUWFxgRMykaGxB0JSwdEUcrLh8BUzYoKS8SM0YxZTc5Oio7PC0v/EABkBAAMBAQEAAAAAAAAAAAAAAAABAwIEBf/EACQRAAMBAAIDAAIDAAMAAAAAAAABAhEDIRIxQQRREyJhI0Jx/9oADAMBAAIRAxEAPwDGYQhAAhCEACEIQAIQhAAhCEACAhCABCE6URiPVEWpJqJ1RSSNClM1WG5lsRo0mvpeW7gPBKjH2io5VbHMFYgEa7gWiHL3CXrOFRTa+p6CblQxWHwlJKRdVyrYLcXNhcm3eTc+s57fnq3Dq4/+Nppa/wBFVo8eYLZludt+vfJ3gXL9MoKjqCz3b4mVri1Oi1Q10qD2ZbUAbX3tew3lz4HxmhUVUpuLqALXB203HXwnN+Nw8UU/XZX8p015TOIjOOcOCEFdFPSTnBAopgL6yB5h4gC5Xounr1kdgeNtSYE+73d8sqU3q9EqVVxpNlz4thy9JlG9jYd/hM34HxT9mxPaHZ1Vh1A/UGabgsWtVQ6m4P8AVpSudeXGdjXpDX7w7/GUtLVSIw/+rLfg+LUauiOCe46H4GPGQGYFVxzobG4I9LSb4Xz1XQBWbMB366ecVVqylqNrg8n/AFef+lh565YOJZWUWKggtbfzlAxXKVVey6nTYjumocH5tpVR2mAbuMfe1pVGOxkYf8aSn0inj8owjG8MemCoUgHcnc/yjA4dhNv43y2tQ3WVrF8qdQJ0Tz/sz456Muam5NtSe7f5SW4dyxjKtsmGqt45Co+LWE2T7OeFLTp1SVFy41sL2yjrLsBOpUsOV05oyLgnImNsPaKqDuZgT8FvLPS5Evb2lY+Sr+ZP5S7ieyPhO7havyeSlmlP/wCwND/vKvxT/wDM9lvhNYv0T/kv9nxpCEIzAQhCABCEIAEIQgAQhCABAQhAAnaziKUxc6RiHmHWXXlLlepinGhCdW/Se8jcmviHDVFIQWPnNvwuHpYWloAqqJzXevEdErxW/f0U7mX2GBp0cNT7BfMzEXuVUWtcMpuWYEa/c1mZ8a44zFlvm7QyswJYKL2UG50uSdb7R39ofGP2rGh6Z7IRUW5P3WYk+ub5S08L5Awz0FNRnzkXLi25G1u6LwnpsrN3jle/rKzwHmYpZnUMgsDlbXW9+yR3Xv333kthuNBMQwyqibipTYapujWHgN7bjaQvF+Sq2HLMhFRAb2vY6Xscp62jCnXp1AUclStymYkDUgspHu2NttDfrMXEt6iscl5lGgYnFXbMTmzAHMD71xuD4xliK2lxtIjB4rNTRbk5Ba53HXKR0sLaeIjl8T2ZNS0FNb0XLkXimVjTY6NqPAy/OoYWPWYhwTH5KgPjNg4VjQ6iVms/q/TObknf7Io3N/LF2Z0G8znF4JkvPobGUQykTNOaeCHUqNJnceFeOtX+mYftTIdCRJ/hHMbowuxvIXiOEKkyNViJdSqRKrc0brwfmNaqhWOsmPao4sLTCeGcWZDvLjwvmY21MjXG0Um0zV+CUgqtbq35CScgeUcYKtDPf7zflJ6dMLJRy2/7MITy8JQwewnkIAfGsIQiGEIQgAQhCABCEIAEIQgAQhFKdMmAHiISdJYuC8HLMrEX1BtPOD8NubmXvhKpSXMRe+khycnxF+Pj3tmhcv1lpUAWsCFFz6aTPeeebWqsaaNZOtusacw8xHIERiBaxFzKY9QsbmRmd9l+k9+lg4NwlcQMO5FyMS6sPxKtIVNfAWUf5zNAXmqhQ7FQMi+7mZDlJGmW63t6yqci4rJemVuC4dW/CcuVx6gL/pl54jgMJWy1K9NGYDQsBawG7X0IF9ztN78NJfURPFOZsMEJDKWIuAWUaE2U3J1FhfyIma8ZYMDVpkCzg9n/ABaWPhrLbzPwqhicblzBQKC5WQra6Adm1rXsSfJZA4fhJAqrm9pkAcaWuFdbLbXUnKLeM1OJjx116JLh9Jv2ekW3Zc3jYk5QfHLaN64sI4rVSiBTuAL+fX0kRi8XJLW9FyZLaT1ClPEZWmjcs8YAQAsPjMcxGL7o64RxlkJ3IPSVrjbRFWk8PoyhjMwuDoYx4rRDqZSeWuYibAnSW6tj1ZdD0nO00UmUnqMz5mwYFztKVXp6zVuN0QQRuCJRMZgQov3y/HWE+SdK9a0Wo4kr1hWSNWM6VjObtG+/ZZVvgFY9Xf5Nb8pcw8pH2WC3DqXi1Q/+40uIaVcknXY6BnoiKGd5phoaYpCc5oRYaPjaEIRDCEIQAIQhAAhCEACFoCKU1gB1RolpK4HC23nOFQCxMkyQovpJ1Xw3M/Sdp4dUQWH3byFxXFXW6htOgjWrxhjfXpb07owYs7hVBLMbADqfCSUv6XVJ9I6fEsx1N53SMk6fLNUAs700Ci7AvmYDyUEfOL1uBpTCs1RnVhcMiAr6kvcfDpHqfSNeLXbHXL2O9m4Pdv5dflNA4jj6q0s1FUYZbEM2W/Xex0t00vcTPKFSmz0sNRv22UO9u0wuC1+5VXMQO/yubdzJi6mFQstFK2HcAlWAY0mO4IIN0Jv5Xt3TKl+zapLrdKVjiy1xUWmlFlIJCVA6m+m17gm520sZKcKxWRKlT8ZVB83b6J8ZV+JcRV3LJTWmv4VOnw2HpLFyrxWgqMlemro4AswJtYscyEEFG1OoOwWarqWwVrcQ0x+OkDi8V47y2cd5fw7qKmFxNgTrTqg9m4J0qKNRpYArffUyo47g9dNbB12ujB/kO0PUCPiUkOTy/RHPUvPaVQgxEwUzpw5y08J4gQRrL/wjH5l3mS4SpYy2cHxxFhOblg6eKui742uCtvCV3HU7rF1xYbeIYiqCJKVhunpWsXSsZGVkk/ikvIfEJOmKOa0bh9mwtw7DjvVj8XYy1q0rHIS2wGGH/TB+JJljUzsaOUcqYoGjdWigaTaNIV0hOLQmcGfHsIQmCgQhCABCEIAEIQgB6BHVBYggjlWFomIerUFo3r47TKIzqVIleLDXkzoud5N4TsJp77jU9Qh+6O6+l/O20isFRzMAdhqfLu9dpLLrYzWaCpz6JPF1ropB6W/X+vGeVOLoaIom4sTqL9q3S/n02EYM5tbxnLr2Zn+NNYaXNSer6sEcLimp1VrLa6E2Hfoc3xFx6zX8RxvhdamHq4hQpGtMNlfXdWRe15gCZNRpPUKUwRYAgZz2VU3LeWpPqY1xOHCuVVw4H3x7p0F9fDb0m3KfsmrqXqJfjNTAF3GFpucx7LOxCotrHIh7R77udOgEZI4UWGgjfC4VmayKXY3sqKX0G9goNx4zp6bK2R1KkHtKwKkW1sQdf94OUCuiRo41wgINrtp5W0gOIst7637+4eHrGrPqB4k/E6RvXft+CKSfMkafKZ8Z/RR8lfsksfQXEUywAFZQW8WUXLKfECxHkR1EqssPBquVw56W+LH9SJC42kFqOo2V2A8gxEJ6eCp6kzyk9pLYPE2kIpjijUjqdFLwtVLG3iwxEr+HrR/SqSDnCqrSRZwRI3ErFDViFdrxwsFTNy5OFsDhh/0k+knFMhuWBbCYcd1Kn/CJLK09LDjHCmKAxsjxS8w0AreETzQiwenyPCEJzlghCEACEIQAJ0JzOoxM6BnhackzwwDAJhCK4emWYKASSRoBfz0iGSWFp5QF67t59B6fW8Vwz9lfIRLDHS/W7fG5i2FF2P8Ahv8APUfKaRls6fY/1tYfrOc219z07v5xbEEARXh/EWorUChD7WmUcuubKp/BqLEd+o62jGR2Kq6AC4JPQnbrr3RN0uMo0Fh8JwWzHN06eV44pVsjBwFOUg2YAqba2IO48I86MN9kvweoKVGoxo1KivlVVtak2Rs7e0YdpgpCkqNOjbgiNp1Wd3qOSxY7ncncn+u7wj3F8zVKmGag7MBnDKiBUTKLAIVGoVbaAXubE7asT2ECje2p+v8AXjEaOXftX3ufpvGftLq7fiYD+vjF6z5cx/CAo89z+UbYdb5F72LHyFh+RiGPaYK2X/MfyjLihvWqEdXc/FiZJ4akzvlRSzMbAAXOn8pP4DkRqxZ8RU9goCEKFDsyhQHbstZQDYXN9T8cVcy+3huZqliRQp6rTWOHcg4RHJqipVUVLBS2TslbAOV1NmIbMvdbvEf4vlzCUqLOmHRGSnWVc/b/ALwkKz5j2rW7J6A/CL/K4080qvxuR/DIadSPqNaRR0Nu7SKpUl2tOfcJj2sRqvGqVp7UfQ+USk06PozgmmGojupp/CI/DRnwoWo0x/gT+ER2J34c4orzovE4NFgCuYz2JZjCLAPlCEITjLhCEIAEIQgAQhCABCEIAElsBTyJ7Uuqlrqov2suzGw2B1Xx7UiZYMJTApqWHat8ukBp4NVrKbkdfr1MKOrE91vzilRbne48RaIYdmGYEWPTSwM2YHZ1/r4/pGuIqg3Ua99vpJDjNWiuQYfOQaaBvaWze1sfaFbaZfd9byOw+GZ720sCTb46k9YAzjP4Gc1THOEoo5F8wX7zk2C+QsSx8PpChw961RadEe0dyQqDQ6C+t9LW1vfvh5IXixrhluwvsvaPpt846qPl33Jin7I6FqRUh1bKy2N8wtmFvD8o6XhBJLVDlCAkomrWCsxJOqqABfrE2aUsjMRQfKOy3bN0GU9oXtde/aP8Bw3IGas2QgWyCxa19j0XfxOm0d/2gFUoi2VQVF2NxmD2OY62DWa22nSR2IxOrEBnvsbG24N7/p3zOs2kkaByhRpgB6aBSaQOY6sf+PiEbU7aIm1hoJZq1XLY5hlCHS1gDcWObYLa+nlMSGKcgDKbDpsPnHNfitdaIp5mCBj2b7XHTu2PxnDzfiVyU6Ve/h2cX5UzKlr19Lnx/ngUzkogFha53HlrsPn5byC45zw2Ip5FQJcdrW9z016gdBbTxlOJnkrx/icUZ1rX0nf5XJTfeI8nSmcwnWcgsrzvPeIAztTGLD6Sw3FKCIl6yDsqNXXu851h+N4d6nskqqzkE5R1AmK8ap5Hp9Oyv1knQ4j7Cuj6hNO2LEqfxD0vcHpOvUSNqtpPLxDDOSikkNmUEMuzA6hh5xXNHgHVhCcQgB8rwhCcBcIQhAAhCEACEIQAIQhABbCKC6g7Fhf4yysovcnytKqpsbjpLFSrh0zA621HcbaxoAyVHJFJGbLvkRntfQXyg2BtF8Ny3jqjZlw1XLawLLkBPgamW81T7OGp08DTsLFy7sxHvNnK7+AAA8BLS7U3BU2N/H9ZKuXvEWngTWtmHJyFjmrKlSlkXqwZGUC17XDb9P1jd+EstV6bqUo0w+dwCwAUEhVe2VmawA8T3CaxiOIYei7j9ocEdM6sF0AsLj11lF5z45+0VEw6OzoMzs1xqFUk6CyjboL798zNuqNVxTM6URw9VwiKbmwVFBNugA6mXThVTEcMV1FBPbnKzVGUs6IwFrlTYLsbX1J18HPImFDY2nkCFURqjg3BIAC2Ubu4zqR0l/49xFVSoUpq7OoBFgc4Gl8v3wBfTeO6zoXFDfaZlGP407uWbI5yWYr2c+VgoN1sTYAai2g7pDOS2a3aBIN76aX6evylsx3E8OcFXUUkRmNMqyoEsUqDSwGm7X9ZQxispIABBN7a/Kait9LELllz7eseZDclmub3AsANTvbvihe9+hHXxjerWBysDpmAPkdT8LT3Dm4v3k/Uyqz4Qae9itOpfxjHiNS5A7vz/wBvnHoZVuSbdbfWRNV8zEnrBghOEITIwhCEYBOlOs5nS7iNCJ/GYpnKljsABJPh+JR29jV9x7AN+E7DWQJO0muH4MV1NJf73Qp0Lf4Z0S22Sfo1Hkio1NXwVQ3bDtdD+Ki/aQjwBzCWaUXlTGtUWnVe4q0C2Gr33yMb02byYAepl5IllnwR1aET174RiPluEITzjoCEIQAIQhAAhCEACEIQABJmkFp0MzWu5NhfU20v4C9/h4yJUa/16SR4ZQNeqFbWygWvbRbKB4dImNMlsDx3F4NUIzGhUzMiuDlZc1nyN0swIIGlze2svnAuaqdcBVJWoRf2bDf9zo3prJPCctU8bw40NFZazmiTsmW1uz0U3AYLbQ33nvJP2dontHx1BWdiyqpsyqqmwZCDcFiSQdCAo2vJ0prv6VjkqevhI4eqpXJUSjma/YqU2QsOts6kMNd9pVuP8GwdLNUq4KvSbfPSOZAB1spZEGg0sJdOa+A0RhGWpnqUKYvYsWemNg6MdWy3+8SbX1O0xDiXF8Rh6lShRxj1KYuAb3urKNNb9DY27jFMPfZSuSWta0SrcW/ZsQtXB1WIQDKzCx1XKykWsRbTYSycP+0BMp/aKRZtxltY951631vM9pmx6esf0WZQwyLYgC5Gosb9k7jx75TwT9kVy1L6HXMfML4t+1cKvuqbX9SJBxetQYANbQ93SITSWLEYqnT1nZuAB36/lHOHxBAtlBA1v4f0RGYMkaIDUnB3QG3kSDb4gn0EG8BLRjWqljeJwhAQQhCABCEIAE6Xecz1d40BJE6COTiWR0dCVZcpBHQjWNGbsqIvjV1JGwyj4iWJF14HxvLjFqOQExgyVQNg5Nkfw7VviZqeFrB10YEqSrW6MuhE+d6dUlCOq2t4W10m18o49qoz6FatNHuNw4GSoD6qD6mXh6mZZZIT20JoD5XhCE88uEIQgAQhCABCEIAEBCEAFzTsgbvP0H85IcArolQtUbKMrDNYmzDtKLDXXLbwuIzqOfZovQ5j63t8LWl64ByuHOHw/s1eo9Wm1ZiCRTRQHqKxHu9my2JGZiQIm+sGjX+UsLkwtBzfK1P2pJ0IaouY9kaCym3qZK4zi9Gkgeo+QEXAIOYj90a9R5SK41xlMFS7bKzsTlpjQWubWH3UXQE+AG5EwzmTmeriKjFje/cNySbBR3aya/waW9s2ev8AaDgNVLMwsQVyFr+HcRa+5mbc0cewzf8AL4dKa6j3ULsbEAk65VF/dHcO6Vr+x2CqWqsrMgZtAVBa5te+umX46SLq8LqXIVlbyIBPnf6Xlnw2ZXJAPTRgbWzZgLFlXQg3Ou9u+KNRdQAwtcXBuCCPMEiIDg1bqAB3ll/Ikx5UwuSkAGvZrkHoSLErbpoJtRSXaMVSb6YjTqEaW6n4bxrXog30t4idZzrr84M9xfxiAZMhBtv/ALXkiadlZQdfZqfMXBPwsfQmcUlF9xqLd0WZCKZJGyFb6X1Y2vY+Kj1k2/haV02Q8IRxh8Kzmygnvt084zKTfobwilZMpIuDbS42icBBCEIAEBCAjQD1T7vn+cWxuIIZ1GzEX/yxKgLsgj3iGHH7PTqgi5eorDybSWXpk/oxoPuPCah9lWOKhabbOHyHxVrlb+RJ9JlVNt5pv2S1nqN7NgSlFmdTawDOCpBbrudJrjfYqRq1p7OrQldMnyjCEJwlwhCEACEIQAIQhAAhCO+H5Q4ZhdU7RFgb5dgQdLE2B84ASXDsOSFOgddVvckZj2Wy38CR4C/dL5ylx79iStalUZ3amULsoSyq12qMDm95mYrYntLtYykf9qcW1P2XtFFJTmyinTAve++W5Nz39bbScHC6rorVKgQFQWUJaxIva5a1/SJzVPJWmtiVtMZ8ycwPVdmZy7Pu3U22VR91B0A+pJMXgcMQc7ghj7oI2Hf5yVbB0UNxldvxM129LaD0ERxeLAFlJPUDcXnRxcCnun2c/LzeX9ZWIMVidQoBbRLDpoib/OeU1c6hANtQLfMxujkgMLCygNfcFRb0FrGeYVWqXZixW+gG0tNdkmuiYwwUe8E9Tf5KIriaaEaZL9wBHzP6TjB4VQBZPiWi+Kwy2923kFP1EppMqnGKJDBrW8r7dJHFyFHj/OTeOpkX1PjpYfKROLIyrbS99PATl5Et06uN9YcLidgRsbgjcGO8PiUJIa+Vlca97Cyn0IU+kioTna0uqaPbySrVx7NfZXRbBXBNyz5bs1wPdPQdNZGRSpoAPC/x1+loZok2hOEIRiCEIQAICEBAB/SfLUQ9wH0nBrnKyk6XJA8b3ilrvoLnKAB4nQSX4F/wMTSdQjlWyNnF1zMMl7dwJ+UqveGM60hqfD6zAMtJyrGysFYgm4FgbWOpA9ZvvI/AzhcMquLO4DOO422i+Gx1O706Ni1M5XYjW+jaC1rX9ARpa0QwXMyLWbD4h1RwMyO1kV0sSLEmxYAG+22m8I5JmnO9lK4a8VXwsUI3/tCn+NP9a/rCdGkcPlqEITiKhCEIAEIQgAQhCAHSi8ePRNNTm3ZhoCNgCdSOmo+E84X75/db6ROv7iebfwpAfwc8Fw3tsRSpt7rOLjplGrfIGalWW+tt736TP/s//wCfo+VX/wCGpNJq7N6y/D9Ofm+FfrhcxJUGw666yD4hSW4KKi73sAD8RJrHbv5/lIfGdZ0eyOkLSCqSqtmzKbnvIIIt/wCqTOCpdkC228hKfvp+8f4VlnwXvegmJ+lK+Etw6j0tv6xTHU7ITHOA29PyieP91vP842zCKXj039ZX8ce16fmZZMduPX6ytY33vj/EZz2dEDeEISRQ6RbkDvg+5neH98ecSgMIQhAQQhCABPV3nk9XeAE5gewXq7WGVP3yL3H7o19RJPCcu4tKLu1N8rKrKVsxswzE9kkg+ffIjFf3dPzq/wD1m84D+7X91fpMVyOXpbj41axmXco4wYfGspcstRsrFz2ib3Vm8bk/6paufeGF6HtFIvSN2BGZWS97MvUA2Mh/tF95P3h9RLvxT+5f/wANv4TIeTd+X+nX4L+Px/wyb+2D30v/ADKn6QjKE7Dg7P/Z">
+            </a>
+            <nav class="navBar">
+                <div>
+                    <a class="navBar" id="navBtns" href="/public/landing.html">Home</a>
+                    <!-- Login Button if enough time -->
+                    <!-- <button id="navBtns">Login</button> -->
+                </div>
+            
+            <a href="https://www.github.com" target="_blank">
+                <img id="gitHub" src="https://www.shareicon.net/data/128x128/2017/06/22/887590_logo_512x512.png"/>
+              </a>
+            </nav>
+        </h1>
+    </header>
+    <main>
+        <h3 id="addTeamP">
+            Add your own team below!
+        </h3>
+        <section class="flexing">
+        <br>
+        <form id="createTeam">
+            <h4 id="addTeamText">Add your team location and name</h4>
+            <input id="teamName" type="text" placeholder="Team Name">
+            <br><br>
+            <section id="ratings-container">
+            <h4>A rating for your team</h4>
+            <div id="radio-container">
+                <label for="one">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="1"
+                        id="one"/>
+                    1
+                </label>
+                <label for="two">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="2"
+                        id="two"/>
+                    2
+                </label>
+                <label for="three">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="3"
+                        id="three"/>
+                    3
+                </label>
+                <label for="four">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="4"
+                        id="four"/>
+                    4
+                </label>
+                <label for="five">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="5"
+                        id="five"/>
+                    5
+                </label>
+            </div>
+            </section>
+            <br><br>
+            <h4>Add a logo for your team (URL)</h4>
+            <input id="logoURL" type="text" placeholder="Logo URL">
+            <br><br>
+            <input type="submit">
+            <!-- <button type="button">Get all teams</button> -->
+        </form>
+    
+        <section id="team-container"></section>
+        </section>
+    </main>
+    <footer></footer>
+    </wrapper>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="/server/index.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>

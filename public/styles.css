@@ -48,7 +48,7 @@ form{
 }
 /* -------------------------------------- */
 
-/* NBA Logo */
+/* JOHN MAYER PIC */
 #JCM{
     float: left;
     padding: 1%;
@@ -133,9 +133,9 @@ form{
 }
 /* -------------------------------- */
 
-/* EASTERN DROPDOWN */
+/* STUDIO DROPDOWN */
 /* Dropdown Button */
-.easternDropbtn {
+.studioDropbtn {
   background-color: #CE1141;
   color: white;
   padding: 16px;
@@ -181,11 +181,11 @@ form{
 .dropdown:hover .dropdown-content {display: block;}
   
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .easternDropbtn {box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;}
+.dropdown:hover .studioDropbtn {box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;}
 
 /* -------------------------------------------------------------------- */
-/*WESTERN DROPDOWN*/
-.westernDropbtn {
+/*LIVE/EP DROPDOWN*/
+.liveDropbtn {
   background-color: #CE1141;
   color: white;
   padding: 16px;
@@ -225,7 +225,7 @@ form{
 .dropdown2:hover .dropdown-content2 {display: block;}
   
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown2:hover .westernDropbtn {
+.dropdown2:hover .liveDropbtn {
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 /* ---------------------------------------------------------------------------- */
