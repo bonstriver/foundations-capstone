@@ -48,7 +48,7 @@ form{
 }
 /* -------------------------------------- */
 
-/* JOHN MAYER PIC */
+/* JM Pic */
 #JCM{
     float: left;
     padding: 1%;
@@ -72,7 +72,7 @@ form{
     padding: 16px;
     
 }
-/* Random team button */
+/* Random solo button */
 #button{
   text-transform: uppercase;
   background: none;
@@ -87,7 +87,7 @@ form{
 /* Team Card CSS ----------------- */
 
 
-#randomTeamCard{
+#randomSolo{
   width: 700px;
   text-align: center;
   font-size: xx-large;
@@ -285,10 +285,20 @@ form{
 }
 
 /* ---------------------------------------------------------------------------- */
-footer {
+#footer1 {
   position:absolute;
   bottom:0;
   width:100%;
   height:60px; /* Height of the footer */
   background: black;
+}
+
+#footer2 {
+  position: fixed;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 60px;
+  clear: both;
+  background-color: black;
+  bottom: 0;
 }

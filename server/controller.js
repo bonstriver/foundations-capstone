@@ -30,7 +30,7 @@ module.exports={
             teams[index].rating -= 1
             res.status(200).send(teams)
         } else if(type === "plus" && teams[index].rating < 5){
-            teams[index] += 1
+            teams[index].rating += 1
             res.status(200).send(teams)
         } else{
             res.status(400).send(`Uh oh. Something went wrong.`)

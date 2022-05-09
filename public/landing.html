@@ -58,7 +58,7 @@
       </p>
     </main>
     <main>
-    <ul id="randomTeamCard" class="">
+    <ul id="randomSolo" class="">
       <button id="button">Wanna hear a sick guitar solo?</button>
     </ul>
     
@@ -66,12 +66,12 @@
       document.getElementById("button").onclick = function () {
         axios.get("http://localhost:5151/api/teams").then(function(response) {
             const data = response.data;
-            document.getElementById("randomTeamCard").innerHTML = [data].map(function(team) {
-                return `The team you should bandwagon is:<br>the ${data.name}!<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"/></a>`;
+            document.getElementById("randomSolo").innerHTML = [data].map(function(team) {
+                return `You should check this one out:<br>the ${data.name}!<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"/></a>`;
               })
               .join("");
           }).catch(function (err) {
-            document.getElementById("randomTeamCard").innerHTML =
+            document.getElementById("randomSolo").innerHTML =
               '<li class="text-danger">' + err.message + "</li>";
           });
       };
