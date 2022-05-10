@@ -11,7 +11,7 @@
 <body>
   <wrapper>
     <header>
-        <h1 id="heading">Jericho Jack Jelly Attack</h1>
+        <h1 id="heading">John Mayer Shreds, Too</h1>
         <h1>
             <a href="https://www.youtube.com/watch?v=mQ055hHdxbE" target="_blank">
               <img id="JCML" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoHFYStyhxcf898EcDIzdUBirfWtjxL-DxQ&usqp=CAU">
@@ -58,7 +58,7 @@
     </header>
     <main class="frontPageParagraph">
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius error unde quibusdam qui? Quasi itaque fugiat, deserunt, maxime architecto quas mollitia laudantium recusandae ipsum dolorem iste officia corporis amet doloribus!
+        Singer-songwriter John Mayer has been on the music scene for over two decades now. Even if you haven't heard of the seven-time Grammy winner, you have still probably heard his music on your mom's "Now That's What I Call Music!" CD from the backseat of the Dodge Grand Caravan in 2008. While his legacy may be cemented as the womanizing pop-blues balladeer from the early 2000's, did you know...John Mayer shreds, too?
       </p>
     </main>
     <main>
@@ -71,7 +71,7 @@
         axios.get("http://localhost:5151/api/solos").then(function(response) {
             const data = response.data;
             document.getElementById("randomSolo").innerHTML = [data].map(function(solo) {
-                return `You should check this one out...<br>${data.name}<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"/></a>`;
+                return `You should check this one out...<br>${data.name}<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset"/></a>`;
               })
               .join("");
           }).catch(function (err) {
