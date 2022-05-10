@@ -14,8 +14,12 @@
         <h1 id="heading">Jericho Jack Jelly Attack</h1>
         <h1>
             <a href="https://www.youtube.com/watch?v=mQ055hHdxbE" target="_blank">
-                <img id="JCM" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoHFYStyhxcf898EcDIzdUBirfWtjxL-DxQ&usqp=CAU">
+              <img id="JCML" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoHFYStyhxcf898EcDIzdUBirfWtjxL-DxQ&usqp=CAU">
             </a>
+            <a href="https://www.youtube.com/watch?v=mQ055hHdxbE" target="_blank">
+              <img id="JCMR" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoHFYStyhxcf898EcDIzdUBirfWtjxL-DxQ&usqp=CAU">
+            </a>
+
             <nav class="navBar">
                 <div>
                     <ul class="dropdown">
@@ -54,7 +58,7 @@
     </header>
     <main class="frontPageParagraph">
       <p>
-        California Mitsubishi Suzuki, Roll Out
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius error unde quibusdam qui? Quasi itaque fugiat, deserunt, maxime architecto quas mollitia laudantium recusandae ipsum dolorem iste officia corporis amet doloribus!
       </p>
     </main>
     <main>
@@ -67,7 +71,7 @@
         axios.get("http://localhost:5151/api/teams").then(function(response) {
             const data = response.data;
             document.getElementById("randomSolo").innerHTML = [data].map(function(team) {
-                return `You should check this one out:<br>the ${data.name}!<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"/></a>`;
+                return `You should check this one out...<br>${data.name}<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"/></a>`;
               })
               .join("");
           }).catch(function (err) {
@@ -78,7 +82,7 @@
     </script>
     </main>
     <footer>
-      <div id="footer1"></div>
+      <div id="footer"></div>
     </footer>
   </wrapper>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
