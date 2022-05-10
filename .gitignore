@@ -1,3 +1,2 @@
 /node_modules/
-/planning/
-/.gitignore/
+/.gitignore/ this does not work
