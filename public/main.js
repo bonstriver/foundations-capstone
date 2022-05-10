@@ -43,8 +43,6 @@ function createTeamCard(team) {
     </div>
     <button onclick="deleteTeam(${team.id})">delete</button>
     `
-
-
     teamsContainer.appendChild(teamCard)
 }
 

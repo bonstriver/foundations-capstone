@@ -33,7 +33,7 @@ module.exports={
             teams[index].rating += 1
             res.status(200).send(teams)
         } else{
-            res.status(400).send(`Uh oh. Something went wrong.`)
+            res.status(400).send(`Uhhhhhh`)
         }
     }
 }

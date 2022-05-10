@@ -8,7 +8,7 @@ app.use(cors());
 
 // --------------------------------------------------------------------
 
-// Team Randomizer
+// Solo Randomizer
 let teams = [
     {
         id: 'atlanta',
@@ -167,11 +167,12 @@ const values = Object.values(teams)
 
 app.get("/api/teams", (req, res)=>{
     const randomTeam = values[Math.floor(Math.random()*values.length)]
-    console.log(randomTeam)
+    // console.log(randomTeam)
     res.status(200).send(randomTeam)
 })
 
 // -----------------------------------------------------------------------
+// Theme Changer
 
 
 
@@ -188,7 +189,7 @@ app.put(`/api/teams/:id`, updateTeam)
 // -------------------------------------------------------------------------
 
 app.get('/', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../landing.html'))
+    res.sendFile(path.join(__dirname, '../home.html'))
 })
 
 const port = process.env.PORT || 5151

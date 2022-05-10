@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Mayer | Favorites</title>
+    <title>JM Ratings</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap">
 </head>
 <body>
     <wrap id="wrapper">
     <header>
-        <h1>
-            Personal Favorite Performances
+        <h1 id="heading">
+            Jericho Jack Jelly Attack
             <a href="https://www.youtube.com/watch?v=mQ055hHdxbE" target="_blank">
                 <img id="JCM" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVoHFYStyhxcf898EcDIzdUBirfWtjxL-DxQ&usqp=CAU">
             </a>
             <nav class="navBar">
                 <div>
-                    <a class="navBar" id="navBtns" href="/public/landing.html">Home</a>
+                    <a class="navBar" id="navBtns" href="/public/home.html">Home</a>
                     <!-- Login Button if enough time -->
                     <!-- <button id="navBtns">Login</button> -->
                 </div>
@@ -30,17 +30,17 @@
         </h1>
     </header>
     <main>
-        <h3 id="addTeamP">
-            Add your own team below!
-        </h3>
+        <h2 id="rateAlbumH2">
+            Rate the albums yourself<br><br>...and add your own<br>favorite albums to rate!
+        </h2>
         <section class="flexing">
         <br>
         <form id="createTeam">
-            <h4 id="addTeamText">Add your team location and name</h4>
-            <input id="teamName" type="text" placeholder="Team Name">
+            <h4 id="addTeamText">Add the name of your album:</h4>
+            <input id="teamName" type="text" placeholder="Album Name">
             <br><br>
             <section id="ratings-container">
-            <h4>A rating for your team</h4>
+            <h4>What would you rate this album, out of five?</h4>
             <div id="radio-container">
                 <label for="one">
                     <input
@@ -81,6 +81,46 @@
                         value="5"
                         id="five"/>
                     5
+                </label><br>
+                <label for="six">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="6"
+                        id="six"/>
+                    6
+                </label>
+                <label for="seven">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="7"
+                        id="seven"/>
+                    7
+                </label>
+                <label for="eight">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="8"
+                        id="eight"/>
+                    8
+                </label>
+                <label for="nine">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="9"
+                        id="nine"/>
+                    9
+                </label>
+                <label for="ten">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="10"
+                        id="ten"/>
+                    10
                 </label>
             </div>
             </section>
@@ -89,7 +129,6 @@
             <input id="logoURL" type="text" placeholder="Logo URL">
             <br><br>
             <input type="submit">
-            <!-- <button type="button">Get all teams</button> -->
         </form>
     
         <section id="team-container"></section>

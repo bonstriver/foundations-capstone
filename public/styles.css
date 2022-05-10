@@ -11,23 +11,27 @@
   height: 100%;
 }
 body{
-    background-color: snow;
+    background-color: #36b2be;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
 /* Header */
+#heading{
+  text-shadow: #36b2be 2px 2px;
+}
+
 header{
-    background-color: #CE1141;
+    background-color: #8c3c9e;
     color: black;
     text-align: center;
     font-size: 43px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 /* Create Team Form */
-#addTeamP{
-  font-size: 28px;
+#rateAlbumH2{
+    font-size: 36px;
     position: relative;
     display: flex;
     margin: 20px;
@@ -74,7 +78,6 @@ form{
 }
 /* Random solo button */
 #button{
-  text-transform: uppercase;
   background: none;
   border: none;
   cursor: pointer;
@@ -93,7 +96,7 @@ form{
   font-size: xx-large;
   font-weight: 800;
   margin: 2.5%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset;
   padding: 5%;
   float: right;
 }
@@ -109,7 +112,7 @@ form{
   float: left;
   right: 15px;
   font-weight: 500;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset;
   line-height: 24px;
   font-weight: 600;
 }
@@ -136,7 +139,7 @@ form{
 /* STUDIO DROPDOWN */
 /* Dropdown Button */
 .studioDropbtn {
-  background-color: #CE1141;
+  background-color:#8c3c9e;
   color: white;
   padding: 16px;
   font-size: 28px;
@@ -169,7 +172,7 @@ form{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-size: 12px;
+  font-size: 20px;
   position: relative;
   text-align: center;
 }
@@ -186,7 +189,7 @@ form{
 /* -------------------------------------------------------------------- */
 /*LIVE/EP DROPDOWN*/
 .liveDropbtn {
-  background-color: #CE1141;
+  background-color: #8c3c9e;
   color: white;
   padding: 16px;
   font-size: 28px;
@@ -215,7 +218,7 @@ form{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-size: 12px;
+  font-size: 20px;
   position: relative;
 }
 /* Change color of dropdown links on hover */
