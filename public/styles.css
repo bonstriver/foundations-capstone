@@ -29,7 +29,7 @@ header{
     font-size: 43px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
-/* Create Team Form */
+/* Create Solo Form */
 #rateAlbumH2{
     font-size: 28px;
     position: relative;
@@ -74,7 +74,7 @@ form{
   width: 4.5%;
   float: right;
 }
-/* Navigation Buttons (Only make own team) */
+/* Navigation Buttons (Only make own solo) */
 
 /* Random solo button */
 #button{
@@ -87,7 +87,7 @@ form{
   font-size: 28px;
   font-weight: 750;
 }
-/* Team Card CSS ----------------- */
+/* Solo Card CSS ----------------- */
 
 
 #randomSolo{
@@ -118,13 +118,13 @@ form{
   font-weight: 600;
 }
 
-.team-cover-image {
+.solo-cover-image {
   width: 300px; 
   height: 300px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-.team-card {
+.solo-card {
   background-color: #2F1847;
   width: 300px;
   margin: 20px; 
@@ -250,21 +250,21 @@ form{
 }
 
 
-#team-container {
+#solo-container {
   position: relative;
   display: flex;
   float: right;
   flex-wrap: wrap;
 }
 
-.team-cover {
+.solo-cover {
   width: 200px; 
   height: 300px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
-.team-card {
+.solo-card {
   background-color: blanchedalmond;
   width: 200px;
   margin: 20px; 
@@ -276,12 +276,12 @@ form{
   border-top-right-radius: 15px;
 }
 
-.team-name {
+.solo-name {
   font-size: 18px;
   margin: 5px 0;
 }
 
-.team-rating {
+.solo-rating {
   font-size: 15px;
   margin: 5px 0;
 }

@@ -9,7 +9,7 @@ app.use(cors());
 // --------------------------------------------------------------------
 
 // Solo Randomizer
-let teams = [
+let solos = [
     {
         id: 'sunshine',
         name: `"Ain't No Sunshine"`,
@@ -33,12 +33,12 @@ let teams = [
     }
 ]
 
-const values = Object.values(teams)
+const values = Object.values(solos)
 
-app.get("/api/teams", (req, res)=>{
-    const randomTeam = values[Math.floor(Math.random()*values.length)]
-    // console.log(randomTeam)
-    res.status(200).send(randomTeam)
+app.get("/api/solos", (req, res)=>{
+    const randomSolo = values[Math.floor(Math.random()*values.length)]
+    // console.log(randomSolo)
+    res.status(200).send(randomSolo)
 })
 
 // -----------------------------------------------------------------------
@@ -48,13 +48,13 @@ app.get("/api/teams", (req, res)=>{
 
 // -----------------------------------------------------------------------
 
-// Team Creator
-const {getTeams, deleteTeam, createTeam, updateTeam} = require('./controller')
+// Solo Creator
+const {getSolos, deleteSolo, createSolo, updateSolo} = require('./controller')
 
-app.get(`/api/teams`, getTeams)
-app.delete(`/api/teams/:id`, deleteTeam)
-app.post(`/api/teams`, createTeam)
-app.put(`/api/teams/:id`, updateTeam)
+app.get(`/api/solos`, getSolos)
+app.delete(`/api/solos/:id`, deleteSolo)
+app.post(`/api/solos`, createSolo)
+app.put(`/api/solos/:id`, updateSolo)
 
 // -------------------------------------------------------------------------
 

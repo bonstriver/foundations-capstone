@@ -1,19 +1,19 @@
-const teamsContainer = document.querySelector('#team-container')
+const solosContainer = document.querySelector('#solo-container')
 const form = document.querySelector('form')
-const baseURL = `http://localhost:5151/api/teams`
+const baseURL = `http://localhost:5151/api/solos`
 
-const teamsCallback = ({ data: teams }) => displayTeams(teams)
+const solosCallback = ({ data: solos }) => displaySolos(solos)
 const errCallback = err => console.log(err.response.data)
 
-const getAllTeams = () => axios.get(baseURL).then(teamsCallback).catch(errCallback)
-const createTeam = body => axios.post(baseURL, body).then(teamsCallback).catch(errCallback)
-const deleteTeam = id => axios.delete(`${baseURL}/${id}`).then(teamsCallback).catch(errCallback)
-const updateTeam = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(teamsCallback).catch(errCallback)
+const getAllSolos = () => axios.get(baseURL).then(solosCallback).catch(errCallback)
+const createSolo = body => axios.post(baseURL, body).then(solosCallback).catch(errCallback)
+const deleteSolo = id => axios.delete(`${baseURL}/${id}`).then(solosCallback).catch(errCallback)
+const updateSolo = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(solosCallback).catch(errCallback)
 
 function submitHandler(e) {
     e.preventDefault()
 
-    let name = document.querySelector('#teamName')
+    let name = document.querySelector('#soloName')
     let rating = document.querySelector('input[name="ratings"]:checked')
     let logoURL = document.querySelector('#logoURL')
 
@@ -23,37 +23,37 @@ function submitHandler(e) {
         logoURL: logoURL.value
     }
 
-    createTeam(bodyObj)
+    createSolo(bodyObj)
 
     name.value = ''
     rating.checked = false
     logoURL.value = ''
 }
 
-function createTeamCard(team) {
-    const teamCard = document.createElement('div')
-    teamCard.classList.add('team-card')
+function createSoloCard(solo) {
+    const soloCard = document.createElement('div')
+    soloCard.classList.add('solo-card')
 
-    teamCard.innerHTML = `<img alt='team cover' src=${team.logoURL} class="team-cover"/>
-    <p class="team-name">${team.name}</p>
+    soloCard.innerHTML = `<img alt='solo cover' src=${solo.logoURL} class="solo-cover"/>
+    <p class="solo-name">${solo.name}</p>
     <div class="btns-container">
-        <button onclick="updateTeam(${team.id}, 'minus')">-</button>
-        <p class="team-rating">${team.rating} stars</p>
-        <button onclick="updateTeam(${team.id}, 'plus')">+</button>
+        <button onclick="updateSolo(${solo.id}, 'minus')">-</button>
+        <p class="solo-rating">${solo.rating} stars</p>
+        <button onclick="updateSolo(${solo.id}, 'plus')">+</button>
     </div>
-    <button onclick="deleteTeam(${team.id})">delete</button>
+    <button onclick="deleteSolo(${solo.id})">delete</button>
     `
-    teamsContainer.appendChild(teamCard)
+    solosContainer.appendChild(soloCard)
 }
 
-function displayTeams(arr) {
-    teamsContainer.innerHTML = ``
+function displaySolos(arr) {
+    solosContainer.innerHTML = ``
     for (let i = 0; i < arr.length; i++) {
-        createTeamCard(arr[i])
+        createSoloCard(arr[i])
     }
 }
 
 form.addEventListener('submit', submitHandler)
-// form.addEventListener('button', displayTeams)
+// form.addEventListener('button', displaySolos)
 
-getAllTeams()
+getAllSolos()
