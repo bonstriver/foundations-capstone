@@ -47,7 +47,7 @@
                           <a href="https://open.spotify.com/album/7CFCigSkTeW4UHbsF1fLgD" target="_blank" style="background-color: #7d706b; color: white;">The Complete 2012 Performances Collection (2012)</a>
                         </li>
                       </ul>
-                    <a class="navBar" id="navBtns" href="/public/rateAlbum.html">Rate</a>
+                    <a class="navBar" id="navBtns" href="/public/second.html">Database</a>
                 </div>
               
             <a href="https://github.com/bonstriver/foundations-capstone" target="_blank">
@@ -67,14 +67,14 @@
     </ul>
     
     <script>
-      document.getElementById("button").onclick = function () {
-        axios.get("http://localhost:5151/api/solos").then(function(response) {
+      document.getElementById("button").onclick = () => {
+        axios.get("http://localhost:5151/api/solos").then(response => {
             const data = response.data;
-            document.getElementById("randomSolo").innerHTML = [data].map(function(solo) {
+            document.getElementById("randomSolo").innerHTML = [data].map(solo => {
                 return `You should check this one out...<br>${data.name}<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset"/></a>`;
-              })
-              .join("");
-          }).catch(function (err) {
+            })
+        .join("");
+        }).catch(err => {
             document.getElementById("randomSolo").innerHTML =
               '<li class="text-danger">' + err.message + "</li>";
           });

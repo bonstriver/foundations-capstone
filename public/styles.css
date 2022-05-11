@@ -30,7 +30,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 /* Create Solo Form */
-#rateAlbumH2{
+#databaseH2{
     font-size: 28px;
     position: relative;
     display: flex;

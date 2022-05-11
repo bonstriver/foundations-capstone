@@ -49,12 +49,20 @@ let solos = [
 
 
 const values = Object.values(solos)
+let index = 1
 
 app.get("/api/solos", (req, res)=>{
-    const randomSolo = values[Math.floor(Math.random()*values.length)]
+    const firstSolo = values[index]
     // console.log(randomSolo)
-    res.status(200).send(randomSolo)
+    res.status(200).send(firstSolo)
 })
+
+
+// app.get("/api/solos", (req, res)=>{
+//     const randomSolo = values[Math.floor(Math.random()*values.length)]
+//     // console.log(randomSolo)
+//     res.status(200).send(randomSolo)
+// })
 
 
 
