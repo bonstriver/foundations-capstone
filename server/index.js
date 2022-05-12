@@ -49,12 +49,28 @@ let solos = [
 
 
 const values = Object.values(solos)
-let index = 1
+
 
 app.get("/api/solos", (req, res)=>{
-    const firstSolo = values[index]
+    let index = 0
+    const solo = values[index]
     // console.log(randomSolo)
-    res.status(200).send(firstSolo)
+    res.status(200).send({ ...solo, index })
+})
+
+app.get("/api/solos/:index", (req, res) => {
+    const index = Number(req.params.index);
+
+    if (index < 0) {
+        res.status(404).send('No data found')
+    }
+
+    if (index > 4) {
+        res.status(404).send('No data found')
+    }
+
+    const solo = values[index];
+    res.status(200).send({...solo, index});
 })
 
 

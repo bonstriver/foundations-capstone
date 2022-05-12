@@ -7,6 +7,7 @@
     <title>JM Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
 </head>
 <body>
   <wrapper>
@@ -65,21 +66,48 @@
     <ul id="randomSolo" class="">
       <button id="button">Wanna hear a sick guitar solo?</button>
     </ul>
+
+    <button id="prev" class="b">Previous</button>
+    <button id="next" class="b">Next</button>
     
     <script>
+      let index = 0;
+
       document.getElementById("button").onclick = () => {
         axios.get("http://localhost:5151/api/solos").then(response => {
             const data = response.data;
             document.getElementById("randomSolo").innerHTML = [data].map(solo => {
-                return `You should check this one out...<br>${data.name}<br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset"/></a>`;
-            })
+                return `You should check this one out...<br>${data.name}<br><br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset"/></a>`
+                })
         .join("");
         }).catch(err => {
             document.getElementById("randomSolo").innerHTML =
               '<li class="text-danger">' + err.message + "</li>";
           });
       };
+
+      document.getElementById("prev").onclick = () => {
+        axios.get(`http://localhost:5151/api/solos/${index--}`).then(response => {
+          const data = response.data;
+           document.getElementById("randomSolo").innerHTML = [data].map(solo => {
+                return `You should check this one out...<br>${data.name}<br><br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset"/></a>`
+                })
+        .join("");       
+                })
+              }
+
+      document.getElementById("next").onclick = () => {
+          axios.get(`http://localhost:5151/api/solos/${index++}`).then(response => {
+          const data = response.data;
+            document.getElementById("randomSolo").innerHTML = [data].map(solo => {
+                return `You should check this one out...<br>${data.name}<br><br><a href="${data.site}" target="_blank"><img src="${data.imgUrl}" style="box-shadow: #8c3c9e 0px 50px 100px -20px, #8c3c9e 0px 30px 60px -30px, #8c3c9e 0px -2px 6px 0px inset"/></a>`
+                })
+        .join("");
+        })
+        }
+
     </script>
+    
     </main>
     <footer>
       <div id="footer"></div>
