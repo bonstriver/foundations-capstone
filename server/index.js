@@ -52,7 +52,7 @@ const values = Object.values(solos)
 
 
 app.get("/api/solos", (req, res)=>{
-    let index = 0
+    let index = 1
     const solo = values[index]
     // console.log(randomSolo)
     res.status(200).send({ ...solo, index })
